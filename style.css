@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  image-rendering: pixelated;
+}
+
+body {
+  background-color: #5c94fc; /* Warna Langit Klasik Mario NES */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.game-wrapper {
+  background: #000000;
+  border: 6px solid #f8d800; /* Warna Koin Mario */
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 10px 0 #000, 0 15px 25px rgba(0,0,0,0.5);
+  text-align: center;
+  max-width: 860px;
+  width: 100%;
+}
+
+.mario-header h1 {
+  color: #e52521; /* Mario Red */
+  text-shadow: 3px 3px #000, 5px 5px #f8d800;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.mario-header .subtitle {
+  color: #ffffff;
+  font-size: 0.7rem;
+  margin-bottom: 20px;
+}
+
+.url-input-box {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  justify-content: center;
+}
+
+.url-input-box label {
+  color: #f8d800;
+  font-size: 0.7rem;
+  line-height: 38px;
+}
+
+.url-input-box input {
+  flex: 1;
+  max-width: 450px;
+  background: #222;
+  border: 3px solid #fff;
+  color: #00ff66;
+  padding: 8px 12px;
+  font-size: 0.6rem;
+  outline: none;
+}
+
+.url-input-box button {
+  background: #e52521;
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 0 16px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  transition: transform 0.1s;
+}
+
+.url-input-box button:active {
+  transform: scale(0.95);
+}
+
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border: 4px solid #fff;
+  background-color: #5c94fc;
+}
+
+.controls-guide {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.controls-guide .card {
+  background: #000;
+  border: 3px solid #43b047; /* Pipe Green */
+  color: #fff;
+  padding: 10px;
+  font-size: 0.65rem;
+  border-radius: 6px;
+  flex: 1;
+}
+
+.controls-guide .card span {
+  display: block;
+  margin-top: 6px;
+  color: #f8d800;
+}
